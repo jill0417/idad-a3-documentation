@@ -13,7 +13,6 @@ body {
   font-family: "Zain", sans-serif;
   font-weight: 400;
   font-style: normal;
-  margin-top: 40px;
 }
 
 header {
@@ -43,10 +42,10 @@ header {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 40px;
+  gap: 48px;
   max-width: 1100px;
-  margin: 50px auto 60px;
-  padding: 0 20px;
+  margin: 72px auto 60px;
+  padding: 0 32px;
 }
 
 .title-content {
@@ -75,16 +74,17 @@ h1 {
 .link {
   display: inline-block;
   text-decoration: none;
-  background: rgb(255, 255, 255);
+  background: linear-gradient(90deg, #e5e5f1 0%, #b9d4f1 100%);
   color: rgb(64, 64, 88);
-  padding: 12px 28px;
+  padding: 14px 40px;
   border-radius: 25px;
   font-family: "Markazi Text", serif;
   font-optical-sizing: auto;
   font-weight: 600;
   font-style: normal;
+  font-size: 1.2rem;
   margin-left: 110px;
-  margin-top: -60px;
+  box-shadow: 0 4px 12px rgb(25, 27, 39);
 }
 
 h2 {
