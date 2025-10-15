@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>idad-a2-documentation</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bevan:ital@0;1&family=Markazi+Text:wght@400..700&family=Zain:ital,wght@0,200;0,300;0,400;0,700;0,800;0,900;1,300;1,400&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="nav-container">
+        <a href="#prototype" class="logo"
+          ><img src="dice-cover.png" alt="dice-cover"
+        /></a>
+      </div>
+      <nav class="nav">
+        <a href="#values">Guiding Values</a>
+        <a href="#rationale">Design Rationale</a>
+        <a href="#changes">Significant Changes</a>
+        <a href="#timeline">Production Timeline </a>
+        <a href="#proud"> Proud Aspect</a>
+        <a href="#challenging"> Challenging Aspect</a>
+      </nav>
+    </header>
+
+    <section id="prototype" class="title-container">
+      <div class="title-content">
+        <h1>Emotion Dice Project</h1>
+        <a
+          class="link"
+          href="https://idada2.netlify.app/"
+          target="_blank"
+          rel="noopener"
+          >Visit Prototype</a
+        >
+      </div>
+      <img src="prototype-main.png" alt="prototype-pic" class="title-bg" />
+    </section>
+
+    <section class="content">
+      <!-- Guiding Values  -->
+      <section id="values" class="values">
+        <h2>Guiding Values And Embodiment In The UI</h2>
+        <p>
+          The core guiding value of Emotion Dice is to create playful and
+          reflective digital experiences through accessibility. Music visualises
+          the unpredictability of emotions, paired with the animation to create
+          a more sensory-rich interaction, and also leverages physical
+          movements. Additionally, using this randomness not only as a game
+          mechanic but also as a metaphor for the volatile nature of emotion
+          supports the cognitive action. The experience supports diverse users
+          through eye-catching and visually distinct emotion labels, ensuring
+          clarity of purpose and inclusiveness. While expressive typography,
+          soft gradients, and sound combine to transform a simple roll of the
+          dice into a small act of emotional self-discovery.
+        </p>
+      </section>
+      <!--  Design Rationale-->
+      <section id="rationale" class="Rationale">
+        <h2>Design Rationale</h2>
+        <p>
+          In my prototype, I used multisensory feedback to guide user
+          interaction. When the user clicks a button, the dice image animates as
+          it rolls, accompanied by a dice rolling sound and the change of the
+          background colour. The emotional title and its matching soundtrack
+          appear prominently, the music controls group logically below the song
+          title, making the information design clean and letting the users feel
+          the result intuitively. The action of rolling the dice is consistent
+          with the triggered emotions, and the emotional atmosphere echoes the
+          background colour and music, which strengthens the mapping. For
+          learnability, there is only one primary button needed to interact,
+          which has no unnecessary controls at first glance, making the
+          prototype approachable for first-time users.
+        </p>
+      </section>
+
+      <h3>Audio Reference</h3>
+      <ul class="refs">
+        <li>
+          Dice Rolling Sound -
+          <a
+            href="https://pixabay.com/sound-effects/shaking-and-rolling-dice-69018/ "
+            target="_blank"
+            rel="noopener"
+            class="link-r"
+          ></a>
+        </li>
+      </ul>
+      <!-- <div class="sketch">
+          <figure class="card-cover">
+            <img src="multi-cube.png" alt="multi-cube" />
+            <figcaption>
+              Sketch:dice showing multiple emotions to present the concept of
+              this emotion dice
+            </figcaption>
+          </figure>
+        </div> -->
+
+      <!-- Significant Changes -->
+      <section id="changes" class="Changes">
+        <h2>Significant Changes</h2>
+        <p>
+          After receiving the feedback, I implemented some key improvements. One
+          of the major changes was creating a fair roll system, which ensures
+          that every emotion face is shown up without immediate repeats with a
+          random order for two cycles. After the 2 cycles, normal random rolling
+          resumes. This can prevent repetition and make sure that they
+          experience all the emotions, to make the whole exploration more
+          engaging. I also added the background colour transition that tied to
+          each emotion and added a dice rolling sound effect to improve the
+          immersive and realistic experience. These changes not only improved UI
+          usability but also deepened the conceptual consistency of emotional
+          change and feedback design.
+        </p>
+      </section>
+
+      <!-- Production Timeline & Time Management -->
+      <section id="timeline" class="Timeline">
+        <h2>Production Timeline & Time Management</h2>
+        <p>
+          I first designed the dice-rolling logic and the concept of matching
+          emotions, then made a preliminary draft of the basic UI. Next, I laid
+          out the overall framework using HTML and focused on functionality with
+          JavaScript, establishing dice logic and associating emotions with
+          sounds. Once functionality is built, I utilise CSS to design the UI
+          and appearance of the prototype, and I even drew my own icons for the
+          dice. Based on user feedback, I first optimised the dice rolling loop
+          system, added a non-repeating emotion loop to enhance usability, and
+          then introduced background colour logic and tested the audio feedback.
+          I also adjusted some elements of the UI, like instead of using the
+          built-in audio player, I customised the buttons to better align with
+          the style of the website and added an alert to warn of the sound
+          output and make the website more accessible and clearer. In this
+          project, I spent most of my time debugging the dice rolling queue
+          logic and figuring out how to let it connect to the audio. I also
+          considered adding some other functions like tone control and rolling
+          history, but I prioritise completing and refining the main functions.
+        </p>
+      </section>
+
+      <!-- Most Proud Design Aspect -->
+      <section id="proud" class="Proud">
+        <h2>Most Proud Design Aspect</h2>
+        <p>
+          I’m most proud of successfully creating the dice roll animation paired
+          with randomised emotion outcomes, which is the core interaction of
+          this prototype. I tried to make it feel satisfying and immersive,
+          relating to the theme of skeuomorphism. As the dice roll, they animate
+          smoothly, playing sound effects and displaying emotions, all
+          accompanied by matching music and background colours. This combination
+          of visual animation, sound feedback, and emotional effects makes the
+          interaction more engaging, simulating rolling the dice, and adds a
+          refined touch to the experience, which makes the experience more
+          refined and gives me satisfaction when I'm completed.
+        </p>
+      </section>
+        <!-- Most Challenging Design Aspect -->
+        <section id="challenging" class="Challenging">
+        <h2>Most Challenging Design Aspect</h2>
+        <p>
+          The most challenging aspect of this project was implementing the fair roll system, which I had to have each emotion face show up once in a random order for two full cycles, then switch to normal random behaviour. At first, I didn't understand the logic behind this system and was confused about how to prevent duplicates in the scrolling queue and ensure that each expression appeared exactly once within a cycle. But through the one-on-one guidance of the teacher, I was able to break down the problem, gradually understand the logic, and slowly build a system through continuous research and experimentation, which gives me a sense of satisfaction and accomplishment. 
+        </p>
+    </section>
+  </body>
+
+  <footer class="footer">
+    <div class="footer-content">
+      <p>Name: Jill Huang</p>
+      <p>Student Number: s4023377</p>
+      <p>Email: s4023377@student.rmit.edu.au</p>
+    </div>
+  </footer>
+</html>
