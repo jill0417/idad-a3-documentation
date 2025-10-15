@@ -28,37 +28,15 @@ header {
   align-items: center;
 }
 .logo img {
-  height: 80px;
+  height: 100px;
   width: auto;
   display: block;
   transition: transform 0.2s ease;
+  margin-top: 20px;
 }
 
 .logo img:hover {
   transform: scale(1.15) rotate(-2deg);
-}
-
-.nav {
-  margin: 0 auto;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 60px;
-  width: min(1000px, 92vw);
-}
-
-.nav a {
-  color: rgb(255, 255, 255);
-  font-family: "Markazi Text", serif;
-  font-optical-sizing: auto;
-  font-weight: 400;
-  font-size: 18px;
-  padding: 8px 12px;
-  border-radius: 999px;
-}
-
-.nav a:hover {
-  color: rgb(191, 214, 233);
 }
 
 .title-container {
@@ -67,7 +45,7 @@ header {
   justify-content: center;
   gap: 40px;
   max-width: 1100px;
-  margin: 100px auto 60px;
+  margin: 50px auto 60px;
   padding: 0 20px;
 }
 
@@ -133,6 +111,15 @@ h3 {
   font-size: 18px;
 }
 
+.sketch img {
+  width: 500px;
+  border-radius: 10px;
+  margin: 20px;
+  margin-left: -5px;
+  margin-bottom: -3px;
+  box-shadow: 0 6px 18px rgb(25, 27, 39);
+}
+
 .link-r {
   color: rgb(185, 212, 241);
 }
@@ -140,38 +127,18 @@ h3 {
   color: rgb(255, 255, 255);
 }
 
-.sketch img {
-  width: 200px;
-  border-radius: 10px;
-  margin: 20px;
-  margin-left: -20px;
-}
-
-.card-cover {
-  display: flex;
-  gap: 30px;
-  align-items: center;
-}
-
-.system-map img {
-  width: 800px;
-  border-radius: 10px;
-  margin: 20px;
-  margin-left: -20px;
-}
-
 .footer {
   width: 100%;
   margin: 0;
   background-color: #c8d7e0;
-  padding: 5px 10px;
+  padding: 5px 0;
   color: rgb(40, 62, 82);
   font-family: "Zain", sans-serif;
   font-weight: 600;
   font-style: normal;
 }
 .footer-content {
-  margin-top: 20px;
-  margin-bottom: 20px;
+  margin: 20px auto;
+  padding-left: 70px;
   letter-spacing: 1px;
 }
